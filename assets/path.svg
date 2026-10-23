@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="350" viewBox="0 0 1200 350" role="img" aria-labelledby="t d">
+  <title id="t">Learning path</title>
+  <desc id="d">Start with Dart mastery in six stages, then branch into DSA and interview prep, or build with a stack such as Flutter, Serverpod, Dart Frog, Relic, Shelf, Dart CLI, Jaspr, AngularDart, OverReact, Functions Framework or Firebase Functions.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13233a"/>
+      <stop offset="1" stop-color="#0c1727"/>
+    </linearGradient>
+    <linearGradient id="start" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0175C2"/>
+      <stop offset="1" stop-color="#0a4f86"/>
+    </linearGradient>
+    <marker id="head" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M1 1l8 4-8 4" fill="none" stroke="#8fa6bf" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .tag  { font-size: 12px; font-weight: 700; letter-spacing: 2.5px; }
+    .ttl  { font-size: 26px; font-weight: 800; letter-spacing: -.4px; fill: #ffffff; }
+    .sub  { font-size: 15px; font-weight: 400; fill: #9db4cc; }
+    .chip { font-size: 13px; font-weight: 600; fill: #e6f3ff; }
+    .link { fill: none; stroke: #8fa6bf; stroke-width: 2.5; stroke-linecap: round; marker-end: url(#head); }
+  </style>
+
+  <!-- start -->
+  <rect x="1" y="106" width="300" height="138" rx="22" fill="url(#start)" stroke="#40C4FF" stroke-opacity=".5"/>
+  <text class="tag" x="28" y="142" fill="#bfe9ff">START HERE</text>
+  <text class="ttl" x="28" y="182">Dart mastery</text>
+  <text class="sub" x="28" y="212" style="fill:#d4ecff">Diagnostic, then 6 stages</text>
+
+  <!-- links -->
+  <path class="link" d="M303 160C360 160 360 80 416 80"/>
+  <path class="link" d="M303 190C360 190 360 270 416 270"/>
+
+  <!-- DSA -->
+  <rect x="421" y="1" width="778" height="150" rx="22" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+  <rect x="421" y="21" width="6" height="110" rx="3" fill="#5fe3a1"/>
+  <text class="ttl" x="452" y="44">DSA and interview prep</text>
+  <text class="sub" x="452" y="68">Stages D1-D5 · 17 patterns · timed sets · mock rounds</text>
+  <g>
+    <rect x="452" y="84" width="89" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="496.5" y="102" text-anchor="middle">Hash maps</text>
+    <rect x="551" y="84" width="110" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="606" y="102" text-anchor="middle">Two pointers</text>
+    <rect x="671" y="84" width="125" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="733.5" y="102" text-anchor="middle">Sliding window</text>
+    <rect x="806" y="84" width="118" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="865" y="102" text-anchor="middle">Binary search</text>
+    <rect x="934" y="84" width="60" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="964" y="102" text-anchor="middle">Trees</text>
+    <rect x="452" y="116" width="67" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="485.5" y="134" text-anchor="middle">Graphs</text>
+    <rect x="529" y="116" width="38" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="548" y="134" text-anchor="middle">DP</text>
+    <rect x="577" y="116" width="110" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="632" y="134" text-anchor="middle">Backtracking</text>
+    <rect x="697" y="116" width="60" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="727" y="134" text-anchor="middle">Heaps</text>
+    <rect x="767" y="116" width="89" height="26" rx="13" fill="#5fe3a1" fill-opacity=".14" stroke="#5fe3a1" stroke-opacity=".4"/><text class="chip" x="811.5" y="134" text-anchor="middle">Intervals</text>
+  </g>
+
+  <!-- Stacks -->
+  <rect x="421" y="199" width="778" height="150" rx="22" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+  <rect x="421" y="219" width="6" height="110" rx="3" fill="#b69cff"/>
+  <text class="ttl" x="452" y="242">Build with a stack</text>
+  <text class="sub" x="452" y="266">Four stages and a capstone project for each</text>
+  <g>
+    <rect x="452" y="282" width="74" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="489" y="300" text-anchor="middle">Flutter</text>
+    <rect x="536" y="282" width="89" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="580.5" y="300" text-anchor="middle">Serverpod</text>
+    <rect x="635" y="282" width="89" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="679.5" y="300" text-anchor="middle">Dart Frog</text>
+    <rect x="734" y="282" width="60" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="764" y="300" text-anchor="middle">Relic</text>
+    <rect x="804" y="282" width="60" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="834" y="300" text-anchor="middle">Shelf</text>
+    <rect x="874" y="282" width="82" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="915" y="300" text-anchor="middle">Dart CLI</text>
+    <rect x="452" y="314" width="67" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="485.5" y="332" text-anchor="middle">Jaspr</text>
+    <rect x="529" y="314" width="103" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="580.5" y="332" text-anchor="middle">AngularDart</text>
+    <rect x="642" y="314" width="89" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="686.5" y="332" text-anchor="middle">OverReact</text>
+    <rect x="741" y="314" width="161" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="821.5" y="332" text-anchor="middle">Functions Framework</text>
+    <rect x="912" y="314" width="204" height="26" rx="13" fill="#b69cff" fill-opacity=".14" stroke="#b69cff" stroke-opacity=".45"/><text class="chip" x="1014" y="332" text-anchor="middle">Firebase Functions (Dart)</text>
+  </g>
+</svg>

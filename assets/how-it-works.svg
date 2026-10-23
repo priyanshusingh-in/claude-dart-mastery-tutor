@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="t d">
+  <title id="t">How it works</title>
+  <desc id="d">Three steps: install the skill, say "Teach me Dart", then learn and earn a rating.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13233a"/>
+      <stop offset="1" stop-color="#0c1727"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .num   { font-size: 20px; font-weight: 800; fill: #06223a; }
+    .ttl   { font-size: 24px; font-weight: 700; fill: #ffffff; }
+    .sub   { font-size: 16px; font-weight: 400; fill: #9db4cc; }
+    .mono  { font-family: 'Cascadia Code', Consolas, 'SF Mono', Menlo, monospace; font-size: 16px; font-weight: 500; fill: #7fd8ff; }
+    .arrow { stroke: #8fa6bf; stroke-width: 2.5; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+  </style>
+
+  <g>
+    <rect x="1" y="1" width="358" height="188" rx="20" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <circle cx="48" cy="52" r="20" fill="#40C4FF"/><text class="num" x="48" y="59" text-anchor="middle">1</text>
+    <text class="ttl" x="84" y="60">Install</text>
+    <text class="sub" x="32" y="106">Upload the zip in Claude Settings,</text>
+    <text class="sub" x="32" y="132">or copy the folder for Claude Code.</text>
+  </g>
+
+  <path class="arrow" d="M378 95h44M412 85l10 10-10 10"/>
+
+  <g transform="translate(420,0)">
+    <rect x="1" y="1" width="358" height="188" rx="20" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <circle cx="48" cy="52" r="20" fill="#40C4FF"/><text class="num" x="48" y="59" text-anchor="middle">2</text>
+    <text class="ttl" x="84" y="60">Say hello</text>
+    <rect x="32" y="92" width="190" height="42" rx="12" fill="#0175C2" fill-opacity=".22" stroke="#13B9FD" stroke-opacity=".45"/>
+    <text class="mono" x="50" y="119">Teach me Dart</text>
+    <text class="sub" x="32" y="166">A short diagnostic comes first.</text>
+  </g>
+
+  <path class="arrow" d="M798 95h44M832 85l10 10-10 10"/>
+
+  <g transform="translate(840,0)">
+    <rect x="1" y="1" width="358" height="188" rx="20" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <circle cx="48" cy="52" r="20" fill="#40C4FF"/><text class="num" x="48" y="59" text-anchor="middle">3</text>
+    <text class="ttl" x="84" y="60">Learn and level up</text>
+    <text class="sub" x="32" y="106">Practice, get reviewed, come back</text>
+    <text class="sub" x="32" y="132">for quizzes, and earn a 0-100 rating.</text>
+  </g>
+</svg>

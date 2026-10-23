@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="384" viewBox="0 0 1200 384" role="img" aria-labelledby="t d">
+  <title id="t">Choose your track</title>
+  <desc id="d">Four tracks. Dart: learn the language. Dart plus DSA: new to Dart and preparing for coding interviews. DSA sprint: already write Dart, interview prep now. Dart plus Dev: build real things with a Dart stack.</desc>
+  <defs>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#13233a"/>
+      <stop offset="1" stop-color="#0c1727"/>
+    </linearGradient>
+  </defs>
+  <style>
+    text { font-family: 'Segoe UI', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; }
+    .kick { font-size: 12px; font-weight: 700; letter-spacing: 2.5px; }
+    .ttl  { font-size: 30px; font-weight: 800; fill: #ffffff; letter-spacing: -.5px; }
+    .for  { font-size: 16px; font-weight: 400; fill: #cfe3f5; }
+    .li   { font-size: 15px; font-weight: 400; fill: #9db4cc; }
+  </style>
+
+  <!-- 1 Dart -->
+  <g>
+    <rect x="1" y="1" width="280" height="328" rx="22" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <rect x="28" y="28" width="44" height="6" rx="3" fill="#40C4FF"/>
+    <text class="kick" x="28" y="64" fill="#40C4FF">TRACK 1</text>
+    <text class="ttl" x="28" y="108">Dart</text>
+    <text class="for" x="28" y="148">Learn the language for</text>
+    <text class="for" x="28" y="172">Flutter, backend or web.</text>
+    <line x1="28" y1="204" x2="254" y2="204" stroke="#9fd4f5" stroke-opacity=".16"/>
+    <text class="li" x="28" y="240">Diagnostic, then 6 stages</text>
+    <text class="li" x="28" y="272">Code review, 16 skill areas</text>
+    <text class="li" x="28" y="304">DSA left out of your rating</text>
+  </g>
+
+  <!-- 2 Dart + DSA -->
+  <g transform="translate(306,0)">
+    <rect x="1" y="1" width="280" height="328" rx="22" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <rect x="28" y="28" width="44" height="6" rx="3" fill="#5fe3a1"/>
+    <text class="kick" x="28" y="64" fill="#5fe3a1">TRACK 2</text>
+    <text class="ttl" x="28" y="108">Dart + DSA</text>
+    <text class="for" x="28" y="148">New to Dart, preparing</text>
+    <text class="for" x="28" y="172">for coding interviews.</text>
+    <line x1="28" y1="204" x2="254" y2="204" stroke="#9fd4f5" stroke-opacity=".16"/>
+    <text class="li" x="28" y="240">Dart Stages 1-2 first</text>
+    <text class="li" x="28" y="272">DSA stages D1-D5 alongside</text>
+    <text class="li" x="28" y="304">Patterns, timed sets, mocks</text>
+  </g>
+
+  <!-- 3 DSA sprint -->
+  <g transform="translate(612,0)">
+    <rect x="1" y="1" width="280" height="328" rx="22" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <rect x="28" y="28" width="44" height="6" rx="3" fill="#ffb454"/>
+    <text class="kick" x="28" y="64" fill="#ffb454">TRACK 3</text>
+    <text class="ttl" x="28" y="108">DSA sprint</text>
+    <text class="for" x="28" y="148">You already write Dart</text>
+    <text class="for" x="28" y="172">and want interview prep.</text>
+    <line x1="28" y1="204" x2="254" y2="204" stroke="#9fd4f5" stroke-opacity=".16"/>
+    <text class="li" x="28" y="240">Short Dart check</text>
+    <text class="li" x="28" y="272">Straight into the DSA stages</text>
+    <text class="li" x="28" y="304">Mock rounds start earlier</text>
+  </g>
+
+  <!-- 4 Dart + Dev -->
+  <g transform="translate(918,0)">
+    <rect x="1" y="1" width="280" height="328" rx="22" fill="url(#card)" stroke="#9fd4f5" stroke-opacity=".2"/>
+    <rect x="28" y="28" width="44" height="6" rx="3" fill="#b69cff"/>
+    <text class="kick" x="28" y="64" fill="#b69cff">TRACK 4</text>
+    <text class="ttl" x="28" y="108">Dart + Dev</text>
+    <text class="for" x="28" y="148">Build real things: apps,</text>
+    <text class="for" x="28" y="172">APIs, sites, functions.</text>
+    <line x1="28" y1="204" x2="254" y2="204" stroke="#9fd4f5" stroke-opacity=".16"/>
+    <text class="li" x="28" y="240">Dart Stages 1-4 first</text>
+    <text class="li" x="28" y="272">Pick 1 of 11 stacks</text>
+    <text class="li" x="28" y="304">4 stages and a capstone</text>
+  </g>
+
+  <text x="600" y="368" text-anchor="middle" font-size="14" fill="#6f8aa6" style="font-family:'Segoe UI',system-ui,Arial,sans-serif">Switch any time with /track</text>
+</svg>
