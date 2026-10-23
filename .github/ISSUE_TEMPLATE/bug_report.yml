@@ -1,0 +1,29 @@
+name: Tutor behaves wrongly
+description: The tutor ignores a rule, breaks a command, or gives a wrong answer about Dart.
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What did you say, and what did the tutor do?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where are you using it?
+      description: Claude web, desktop, Claude Code, ...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Skill version
+      description: Release tag, e.g. v1.0.0

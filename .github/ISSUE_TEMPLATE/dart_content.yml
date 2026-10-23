@@ -1,0 +1,24 @@
+name: Wrong or outdated Dart content
+description: A Dart fact, feature or recommendation in the skill is incorrect or out of date.
+labels: [content]
+body:
+  - type: input
+    id: file
+    attributes:
+      label: File and section
+      placeholder: dart-mastery-tutor/references/roadmap.md, Stage 3
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to the dart.dev page or other reference showing the correct behaviour.
+    validations:
+      required: true

@@ -38,7 +38,8 @@
     .cursor { animation: blink 1s steps(2, start) infinite; }
     @keyframes blink { to { visibility: hidden; } }
     @media (prefers-reduced-motion: reduce) {
-      .o1, .o2, .o3, .l1, .l2, .l3, .l4, .l5, .fill, .num, .cursor { animation: none; opacity: 1; transform: none; }
+      .o1, .o2, .o3 { animation: none; }
+      .l1, .l2, .l3, .l4, .l5, .fill, .num, .cursor { animation: none; opacity: 1; transform: none; }
       .fill { transform: scaleX(0.82); }
     }
   </style>

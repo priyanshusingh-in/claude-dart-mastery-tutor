@@ -178,6 +178,8 @@ claude-dart-mastery-tutor/
 │       ├── roadmap.md         # staged curriculum and ecosystem branches
 │       └── interview-track.md # DSA in Dart, AI-assisted interviews, mock rounds
 ├── assets/                    # README banner and demo
+├── .github/                   # issue and PR templates, CODEOWNERS
+├── CONTRIBUTING.md
 ├── LICENSE
 └── README.md
 ```
@@ -186,9 +188,9 @@ claude-dart-mastery-tutor/
 
 ## 🤝 Contributing
 
-Found a wrong Dart fact, an outdated feature, or a command that behaves badly? Please [open an issue](https://github.com/priyanshusingh-in/claude-dart-mastery-tutor/issues/new). Pull requests are welcome too: fork the repo, change the files under `dart-mastery-tutor/`, and open a PR describing what you changed and why. Because Dart moves quickly, please link the relevant dart.dev page in your PR.
+Found a wrong Dart fact, an outdated feature, or a command that behaves badly? Please [open an issue](https://github.com/priyanshusingh-in/claude-dart-mastery-tutor/issues/new/choose). Pull requests are welcome too: fork the repo, change the files under `dart-mastery-tutor/`, and open a PR describing what you changed and why. Because Dart moves quickly, please link the relevant dart.dev page in your PR.
 
-All changes to `main` go through review by the maintainer.
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. All changes to `main` are reviewed and merged by the maintainer.
 
 ---
 

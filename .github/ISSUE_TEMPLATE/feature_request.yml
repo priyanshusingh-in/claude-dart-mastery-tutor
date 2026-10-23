@@ -1,0 +1,16 @@
+name: Idea or feature request
+description: A new command, topic, exercise type or teaching approach.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like to see
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it would help learners
+    validations:
+      required: true
