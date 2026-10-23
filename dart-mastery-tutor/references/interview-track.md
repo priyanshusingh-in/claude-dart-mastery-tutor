@@ -4,11 +4,7 @@ Philosophy: don't stop learning DSA, but don't prepare like it's 2022. Companies
 
 ## DSA in Dart
 
-- Patterns over problem count. ~150 deeply understood problems beat 500 forgotten ones. Use curated lists (Blind 75, NeetCode 150, company-wise lists) and https://github.com/TheAlgorithms/dart for reading clean Dart implementations.
-- Topics: arrays, strings, hash maps, two pointers, sliding window, stacks and queues, linked lists, trees, tries, binary search, heaps, graphs, greedy, backtracking, dynamic programming, complexity analysis.
-- Practice by topic while learning; mix topics once the basics are in place.
-- For each problem the learner must be able to: (1) recognize the pattern, (2) explain the approach, (3) implement it in Dart, (4) solve a variation. Track all four in the Learner Card.
-- Dart-specific interview tools to teach: `dart:collection` (`Queue`, `ListQueue`, `SplayTreeMap`, `SplayTreeSet`, `LinkedHashMap`), `PriorityQueue` from `package:collection` (not in the core SDK — check whether the interview platform allows packages, otherwise write a heap), `~/` integer division, `int` range on native vs web, `codeUnits`/`runes` for string problems, `List.filled` vs `List.generate` aliasing pitfalls.
+The full DSA curriculum, pattern catalog, problem-solving framework, hint ladder and Dart pitfalls live in `dsa-track.md`. Read it before any DSA teaching, `/problem`, `/drill` or `/mock dsa`. Use curated lists (Blind 75, NeetCode 150, company-wise lists) and https://github.com/TheAlgorithms/dart for reading clean Dart implementations. Track recognize / explain / implement / variation per problem in the Learner Card.
 
 ## Three levels of AI use (enforce these during practice)
 
@@ -34,7 +30,8 @@ Give the learner unfamiliar Dart code with bugs or a missing feature. Grade them
 
 - Rotate formats: `dsa`, `lld`, `system-design`, `ai-assisted`.
 - State the time limit up front (typically 45 minutes) and stay in interviewer character: ask clarifying-question prompts, push on complexity and edge cases, don't hand out solutions.
-- End with a short scorecard: problem solving, communication, code quality, testing, and (for AI rounds) judgment — each 1–5, plus one thing to fix next time.
+- For `dsa` rounds, the learner follows the problem-solving framework in `dsa-track.md` out loud; pick a problem from a pattern they have reached R/E/I on, plus one fresh pattern. Give hints only on the hint ladder, and record them.
+- End with a short scorecard: problem solving, communication, code quality, testing, and (for AI rounds) judgment — each 1–5, plus one thing to fix next time. Feed the result into the DSA ratings and review queue.
 
 ## Weekly split (for ~10 hours; scale to the learner's real time)
 

@@ -9,7 +9,7 @@
 [![Claude Skill](https://img.shields.io/badge/Claude-Skill-D97757?style=for-the-badge)](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
 [![Dart 3](https://img.shields.io/badge/Dart-3.x-02569B?style=for-the-badge&logo=dart&logoColor=white)](https://dart.dev)
 
-**Your personal Dart tutor, code reviewer and interview coach, inside Claude.**
+**Your personal Dart tutor, code reviewer, interview coach and stack mentor, inside Claude.**
 
 [Demo](#-see-it-in-action) ·
 [Install](#-install) ·
@@ -31,7 +31,24 @@
 | 🔍 **Reviews your code** | Paste Dart and get a strict senior review: correctness, null safety, Effective Dart, complexity, a `package:test` idea, and a 1-10 score. |
 | 📈 **Tracks a 0-100 rating** | 16 skill areas, each rated from evidence in your answers and code. Ratings are earned, never given. |
 | 🧠 **Spaced repetition** | Concepts return as quick retrieval quizzes on Day 1, 3, 7, 14 and 30. |
-| 💼 **Interview prep in Dart** | DSA patterns with Dart-specific tools, three levels of AI use, and mock rounds including AI-assisted ones. |
+| 🏗️ **Build with a Dart stack** | After Dart mastery, pick Flutter, Serverpod, Dart Frog, Relic, Jaspr and more. Four stages and a capstone project for each. |
+| 🧩 **DSA by pattern, in Dart** | 17 patterns with recognition signals, tested Dart templates, a problem ladder per pattern and a hint ladder that never hands you the answer. |
+| 💼 **Interview prep in Dart** | A step-by-step problem-solving framework, timed sets, three levels of AI use, and mock rounds including AI-assisted ones. |
+
+---
+
+## 🛤️ Pick your path
+
+On day one the tutor asks about your goal and proposes one of four tracks. You can switch any time with `/track`.
+
+| Track | For you if... | What happens |
+|---|---|---|
+| 🟦 **Dart** | You want to learn the language (for Flutter, backend or web). | Diagnostic, then six stages from foundations to mastery. DSA is left out of your rating, so you're never penalised for skipping it. |
+| 🟩 **Dart + DSA** | You're new to Dart and preparing for coding interviews. | Dart Stages 1-2 first, then DSA stages D1-D5 run alongside the rest of the roadmap. |
+| 🟧 **DSA sprint** | You already write Dart and want interview prep now. | Short Dart check, then straight into the DSA stages. Dart pitfalls are taught the moment a problem exposes them, and mock rounds start earlier. |
+| 🟪 **Dart + Dev** | You want to build real things: apps, APIs, websites, serverless functions. | Dart Stages 1-4 first, then one primary stack of your choice (see below). Each stack has 4 stages and a capstone. `/stack` helps you pick. |
+
+Dart mastery comes first for everyone who needs it. After that you can add DSA alongside a stack, but the tutor teaches one primary stack at a time. DSA concepts apply in any language, but every template, tool and pitfall the tutor teaches is Dart.
 
 ---
 
@@ -113,8 +130,15 @@ Type `/help` in a session for the short list. Full reference:
 | `/test <level> <topic>` | Adaptive test with scenarios and "explain why" questions, ending in a score and revision plan. |
 | `/flashcards <topic>` | Flashcards, comparisons and misconception checks, added to your review queue. |
 | `/review` | Strict senior review of the Dart code you paste. Pasting code with no message does the same. |
-| `/hint` | The smallest useful nudge. |
+| `/hint` | The smallest useful nudge. On DSA problems it climbs a hint ladder: constraint, data structure, pattern, steps in words. |
 | `/solution` | Full solution, only after a real attempt. |
+| `/track` | Show or switch your track: Dart, Dart + DSA, DSA sprint, or Dart + Dev with a stack. |
+| `/stack [goal]` | Not sure which framework? Get one recommendation and a backup, with honest maturity notes. |
+| `/build` | Continue your stack track: next lesson, feature or capstone step. You build first, then review. |
+| `/dsa` | Continue the DSA track: next pattern, problem set, timed set or re-solve that is due. |
+| `/pattern <name>` | Learn one pattern: recognition, brute force, the idea, a Dart template, a problem ladder, teach-back. |
+| `/problem [pattern \| easy \| medium \| hard]` | One problem, solved with the framework. No solution until you've really tried. |
+| `/drill [patterns]` | Rapid-fire pattern recognition: 8 short statements, name the pattern, idea and complexity. |
 | `/mock <dsa \| lld \| system-design \| ai-assisted>` | Mock interview round with a scorecard. |
 | `/card` | Print your Learner Card to save and reuse. |
 | `/help` | List the commands. |
@@ -156,13 +180,45 @@ Master means you can explain *why* Dart behaves as it does, write idiomatic prod
 | 5. Professional Dart | pub, tooling, linting, `package:test`, compile targets, interop | A published-quality package |
 | 6. Mastery | Reading SDK source, API design, profiling | A non-trivial end-to-end project |
 
-Optional branches once the foundations are solid: **Flutter from the language up**, **DSA for interviews**, **backend** (Shelf, Relic, Dart Frog, Serverpod, Cloud Functions) and **web** (`package:web`, Jaspr, AngularDart, OverReact).
+### Development stacks
+
+Pick one after Dart Stage 4. Every stack follows the same four stages: **S1** setup and fundamentals, **S2** core features, **S3** data, state and testing, **S4** ship it. Each ends with a capstone and a separate **Stack rating** on your Learner Card.
+
+| Stack | Best for | Capstone |
+|---|---|---|
+| **Flutter** | Mobile, desktop and web apps | An app with remote data, local persistence, error states and tests |
+| **Serverpod** | Flutter apps with an all-Dart backend (typed client, ORM, auth, realtime) | A Flutter app with sign-in, a database-backed feature and live updates |
+| **Dart Frog** | Small, fast REST APIs with file-based routing | A REST API with auth middleware, tests and a deployed container |
+| **Relic** | A modern, strongly typed HTTP server with WebSockets | A REST + WebSocket service ported from Shelf |
+| **Shelf** | Understanding handlers and middleware under every Dart server | A small API with logging and auth middleware |
+| **Functions Framework** | Serverless HTTP and event functions on Google Cloud (via Cloud Run) | One HTTP and one event-driven function, deployed |
+| **Cloud Functions for Firebase (Dart)** | Dart functions inside a Firebase project | A Flutter app backed by an HTTPS Dart function and Firestore |
+| **Jaspr** | Websites in Dart: static, server-rendered or client-side | A content site or an SSR app with a backend |
+| **AngularDart** | Maintaining existing AngularDart apps | A routed app with a service layer and component tests |
+| **OverReact** | Typed React components in Dart, for React teams | A small app with Redux state |
+| **Dart CLI** | Command-line tools and scripts | A tested, compiled command-line tool |
+
+The tutor checks the current docs before teaching a stack and is upfront about maturity. For example, Cloud Functions for Firebase in Dart is still experimental, Functions Framework is community-supported and deploys to Cloud Run, and AngularDart is community-maintained.
+
+### DSA track
+
+| Stage | Focus |
+|---|---|
+| D1 Foundations | Big-O, arrays and strings, hash maps, two pointers, sliding window, prefix sums, stacks and queues, binary search |
+| D2 Structures | Recursion, linked lists, trees, tries, heaps and top-K, intervals |
+| D3 Graphs and search | BFS/DFS and grids, topological sort, union-find, shortest paths, backtracking, greedy |
+| D4 DP and advanced | 1D/2D and string DP, knapsack-style DP, monotonic stack, bit manipulation |
+| D5 Interview mastery | Mixed timed sets, mock rounds, AI-assisted rounds, weak-pattern repair |
+
+Each stage ends with a gate: the four-step ladder on at least 3 patterns and a timed mixed set. For every problem you must **recognize** the pattern, **explain** the approach, **implement** it in Dart, and **solve a variation**. The tutor tracks all four per pattern on your Learner Card, and patterns and problems come back for a from-scratch re-solve on Day 1, 3, 7, 14 and 30.
+
+Dart-specific traps are taught when they first bite: `removeAt(0)` is O(n), `%` vs `remainder` with negatives, 64-bit `int` on native vs 53-bit on web, `List.filled` aliasing in 2D grids, unstable `List.sort`, and more.
 
 ### Interview track
 
-- DSA by pattern, not problem count, with Dart tools like `dart:collection`, `PriorityQueue` from `package:collection`, `~/`, and `List.filled` vs `List.generate` pitfalls.
 - Three levels of AI use enforced during practice: **no AI**, **AI as tutor**, **AI as reviewer**.
 - AI-assisted rounds: you get unfamiliar buggy Dart code and are graded on how you navigate it, plan, verify and judge AI output.
+- `/mock` rounds for DSA, low-level design, system design and AI-assisted, each ending in a scorecard.
 
 ---
 
@@ -176,7 +232,9 @@ claude-dart-mastery-tutor/
 │   └── references/
 │       ├── learner-card.md    # rating system and Learner Card template
 │       ├── roadmap.md         # staged curriculum and ecosystem branches
-│       └── interview-track.md # DSA in Dart, AI-assisted interviews, mock rounds
+│       ├── development-tracks.md # stack chooser, curriculum and capstone per stack
+│       ├── dsa-track.md       # DSA stages, pattern catalog, framework, hint ladder, Dart templates
+│       └── interview-track.md # AI-assisted interviews, levels of AI use, mock rounds
 ├── assets/                    # README banner and demo
 ├── .github/                   # issue and PR templates, CODEOWNERS
 ├── CONTRIBUTING.md

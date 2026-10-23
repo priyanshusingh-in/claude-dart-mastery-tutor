@@ -53,15 +53,15 @@
   <text class="eyebrow" x="210" y="84">CLAUDE SKILL</text>
   <text class="title" x="190" y="146">Dart Mastery Tutor</text>
 
-  <text class="tag" x="192" y="188">Diagnoses your level, teaches Dart 3, reviews your code</text>
-  <text class="tag" x="192" y="216">and tracks a rating you earn.</text>
+  <text class="tag" x="192" y="188">Diagnoses your level, teaches Dart 3, coaches DSA interviews,</text>
+  <text class="tag" x="192" y="216">guides your first real project, and tracks a rating you earn.</text>
 
   <g transform="translate(192,242)">
     <rect width="86" height="34" rx="17" fill="none" stroke="#9fd4f5" stroke-opacity=".28"/>
     <text class="pill" x="43" y="22" text-anchor="middle">Dart 3</text>
-    <rect x="98" width="136" height="34" rx="17" fill="none" stroke="#9fd4f5" stroke-opacity=".28"/>
-    <text class="pill" x="166" y="22" text-anchor="middle">16 skill areas</text>
-    <rect x="246" width="150" height="34" rx="17" fill="none" stroke="#9fd4f5" stroke-opacity=".28"/>
-    <text class="pill" x="321" y="22" text-anchor="middle">DSA + interviews</text>
+    <rect x="98" width="150" height="34" rx="17" fill="none" stroke="#9fd4f5" stroke-opacity=".28"/>
+    <text class="pill" x="173" y="22" text-anchor="middle">DSA + interviews</text>
+    <rect x="260" width="196" height="34" rx="17" fill="none" stroke="#9fd4f5" stroke-opacity=".28"/>
+    <text class="pill" x="358" y="22" text-anchor="middle">Flutter + backend + web</text>
   </g>
 </svg>

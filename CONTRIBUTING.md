@@ -6,7 +6,8 @@ Thanks for helping make this a better Dart tutor. Every change to `main` is revi
 
 - **Wrong or outdated Dart facts.** Dart moves fast; link the exact [dart.dev](https://dart.dev) page that shows the correct behaviour.
 - **Better teaching.** Clearer explanations, analogies, exercises or misconception checks in `dart-mastery-tutor/`.
-- **Curriculum and interview content.** Gaps in `references/roadmap.md` or `references/interview-track.md`.
+- **Curriculum, DSA and stack content.** Gaps or outdated advice in `references/roadmap.md`, `dsa-track.md`, `development-tracks.md` or `interview-track.md`. For stack content (Flutter, Serverpod, Dart Frog, Jaspr and so on), link the current official docs and say which version you checked.
+- **New stacks or DSA patterns.** Open an issue first to agree on scope.
 - **Behaviour bugs.** The tutor ignores a command, breaks the one-question-at-a-time rule, or hands out solutions too early.
 
 ## How to contribute

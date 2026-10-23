@@ -17,12 +17,15 @@ Rate each area 0–100 using only evidence from the learner's answers and code. 
 
 Overall rating = weighted average of the areas, weighting the areas the current stage depends on most.
 
+**Track decides what counts.** The stack rating is separate from the overall Dart rating and never changes it. On the **Dart** and **Dart + Dev** tracks, "DSA in Dart" is marked "not in scope" and is left out of the overall rating, so learners are never penalised for skipping it. On **Dart + DSA** and **DSA sprint**, it counts and gets extra weight once the learner reaches DSA stage D1. Rate "DSA in Dart" from the pattern matrix below: patterns at R/E/I/V, hints used, timed-set results, and quality of complexity and edge-case reasoning. Problem count is never evidence.
+
 ## Template
 
 ```
 LEARNER CARD — <name> — <date>
 Overall Dart rating: __/100   Level: <level>
-Stage: <stage from roadmap>   Sessions: __
+Track: <Dart | Dart + DSA | DSA sprint | Dart + Dev (<stack>)>
+Stage: <Dart stage from roadmap>   DSA stage: <D1-D5 or n/a>   Stack stage: <S1-S4 or n/a>   Sessions: __
 Goal: <goal and timeline>   Weekly time: <hours>
 
 Skill areas (0–100, with short evidence):
@@ -41,13 +44,25 @@ Skill areas (0–100, with short evidence):
 - Testing:
 - Idiomatic Dart (Effective Dart):
 - Performance, memory, compilation (JIT/AOT/JS/Wasm):
-- DSA in Dart:
+- DSA in Dart: <0-100 with evidence | not in scope>
 
 Strengths:
 Weak spots (top 3, with evidence):
 Misconceptions to fix:
-Review queue (item → next due date):
-DSA patterns: recognized / explained / implemented / variation solved
+Review queue (item → next due date; Dart concepts, patterns and problems to re-solve):
+
+DSA pattern matrix (only on tracks that include DSA; R = recognized, E = explained, I = implemented, V = variation solved):
+- <pattern>: R E I V (tick what is earned) — problems done: <names> — hints used: <n>
+- ...
+Timed sets: <date, problems, result>
+Mock rounds: <date, format, scorecard summary>
+
+Stack (only on the Dart + Dev track):
+- Stack and version taught: <e.g. Flutter 3.x>   Stage: <S1-S4>
+- Stack rating (0-100, separate from the Dart rating): __
+  Core concepts: __  Structure and idioms: __  Data and state: __  Testing: __  Deploy and operations: __
+- Projects: <built, with date and what was learned>   Capstone: <not started | in progress | done>
+
 Next session plan:
 ```
 

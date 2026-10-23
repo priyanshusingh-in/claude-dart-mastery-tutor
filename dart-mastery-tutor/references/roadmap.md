@@ -30,7 +30,9 @@ Read real Dart source (SDK core libraries, popular packages), consult the langua
 
 Always check current official docs before teaching a branch; these ecosystems change faster than the core language.
 
-- **Flutter from the language up** (after Stage 4): how Dart shapes Flutter — `const` widgets, immutability, async in UI, isolates for heavy work, state-management patterns, testing.
-- **DSA for interviews** (start alongside Stage 2): see `interview-track.md`.
-- **Backend:** Shelf → Relic → Dart Frog → Serverpod; Functions Framework for Dart and Cloud Functions for Firebase (Dart).
-- **Web:** `package:web` and JS interop → Jaspr → AngularDart → OverReact.
+- **DSA for interviews** (start after Stage 2, run alongside Stages 3+): see `dsa-track.md` for the stages D1-D5 and `interview-track.md` for AI-assisted rounds and mocks.
+- **Development stacks** (start after Stage 4): see `development-tracks.md` for the stack chooser and the four-stage curriculum and capstone of each stack.
+  - **Flutter** (from the language up): how Dart shapes Flutter — `const` widgets, immutability, async in UI, isolates for heavy work, state-management trade-offs, testing.
+  - **Backend:** Shelf (foundation) → Dart Frog, Relic or Serverpod; Functions Framework for Dart and Cloud Functions for Firebase (Dart) for serverless.
+  - **Web:** Jaspr (modern default), AngularDart (existing codebases), OverReact (React teams); `package:web` and JS interop underneath.
+  - **Dart CLI** tools.
