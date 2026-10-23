@@ -206,4 +206,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. All changes to `main`
 
 Made by [Priyanshu Singh](https://github.com/priyanshusingh-in) · If this helps you learn Dart, a ⭐ is appreciated
 
+<sub>Unofficial community project, not affiliated with or endorsed by Google or Anthropic. Dart and the Dart logo are trademarks of Google LLC.</sub>
+
 </div>
