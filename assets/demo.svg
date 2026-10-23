@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600" role="img" aria-labelledby="t d">
+  <title id="t">Example session with Dart Mastery Tutor</title>
+  <desc id="d">An animated, illustrative chat: the learner asks to learn Dart, the tutor runs a diagnostic, asks them to predict the output of 7 / 2 and 7 ~/ 2, and updates their rating.</desc>
+  <style>
+    .win   { fill: #0b1b2b; stroke: #1d3b57; }
+    .bar   { fill: #11273c; }
+    .ttl   { font: 600 14px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #9fd4f5; }
+    .tut   { fill: #12304b; stroke: #1f4f78; }
+    .usr   { fill: #0175C2; }
+    .txt   { font: 400 15px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #eaf6ff; }
+    .mono  { font: 500 15px 'Cascadia Code', Consolas, 'SF Mono', Menlo, monospace; fill: #7CE0FF; }
+    .good  { font: 600 15px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #5fe3a1; }
+    .note  { font: 400 12px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #6f9cc0; }
+    .m { opacity: 0; animation-duration: 26s; animation-iteration-count: infinite; animation-timing-function: ease-out; }
+    .m1 { animation-name: k1; } .m2 { animation-name: k2; } .m3 { animation-name: k3; }
+    .m4 { animation-name: k4; } .m5 { animation-name: k5; } .m6 { animation-name: k6; }
+    @keyframes k1 { 0%,3% { opacity: 0; transform: translateY(10px); } 5%,93% { opacity: 1; transform: none; } 97%,100% { opacity: 0; } }
+    @keyframes k2 { 0%,12% { opacity: 0; transform: translateY(10px); } 14%,93% { opacity: 1; transform: none; } 97%,100% { opacity: 0; } }
+    @keyframes k3 { 0%,27% { opacity: 0; transform: translateY(10px); } 29%,93% { opacity: 1; transform: none; } 97%,100% { opacity: 0; } }
+    @keyframes k4 { 0%,38% { opacity: 0; transform: translateY(10px); } 40%,93% { opacity: 1; transform: none; } 97%,100% { opacity: 0; } }
+    @keyframes k5 { 0%,56% { opacity: 0; transform: translateY(10px); } 58%,93% { opacity: 1; transform: none; } 97%,100% { opacity: 0; } }
+    @keyframes k6 { 0%,67% { opacity: 0; transform: translateY(10px); } 69%,93% { opacity: 1; transform: none; } 97%,100% { opacity: 0; } }
+    @media (prefers-reduced-motion: reduce) { .m { animation: none; opacity: 1; } }
+  </style>
+
+  <rect class="win" x="0.5" y="0.5" width="799" height="599" rx="16"/>
+  <path class="bar" d="M1 17a16 16 0 0 1 16-16h766a16 16 0 0 1 16 16v31H1z"/>
+  <circle cx="26" cy="24" r="6" fill="#ff6b6b"/><circle cx="46" cy="24" r="6" fill="#ffd479"/><circle cx="66" cy="24" r="6" fill="#5fe3a1"/>
+  <text class="ttl" x="400" y="29" text-anchor="middle">Dart Mastery Tutor · example session</text>
+
+  <!-- 1 learner -->
+  <g class="m m1">
+    <rect class="usr" x="584" y="70" width="196" height="44" rx="14"/>
+    <text class="txt" x="602" y="98">Teach me Dart</text>
+  </g>
+
+  <!-- 2 tutor -->
+  <g class="m m2">
+    <rect class="tut" x="20" y="130" width="540" height="76" rx="14"/>
+    <text class="txt" x="38" y="161">Welcome. A short diagnostic first, so I can place you.</text>
+    <text class="txt" x="38" y="187">Q1 of 5: what is your programming background?</text>
+  </g>
+
+  <!-- 3 learner -->
+  <g class="m m3">
+    <rect class="usr" x="402" y="222" width="378" height="44" rx="14"/>
+    <text class="txt" x="420" y="250">2 years of JavaScript. Never used Dart.</text>
+  </g>
+
+  <!-- 4 tutor -->
+  <g class="m m4">
+    <rect class="tut" x="20" y="282" width="520" height="100" rx="14"/>
+    <text class="txt" x="38" y="313">Good, that helps. Predict the output:</text>
+    <text class="mono" x="38" y="345">print(7 / 2);   print(7 ~/ 2);</text>
+  </g>
+
+  <!-- 5 learner -->
+  <g class="m m5">
+    <rect class="usr" x="618" y="398" width="162" height="44" rx="14"/>
+    <text class="txt" x="636" y="426">3.5 and 3</text>
+  </g>
+
+  <!-- 6 tutor -->
+  <g class="m m6">
+    <rect class="tut" x="20" y="458" width="640" height="116" rx="14"/>
+    <text class="good" x="38" y="489">Correct.</text>
+    <text class="txt" x="38" y="515"><tspan class="mono">/</tspan> always returns a double; <tspan class="mono">~/</tspan> is integer division.</text>
+    <text class="txt" x="38" y="541">Syntax &amp; types: +4 (both outputs predicted right). Next: null safety.</text>
+    <text class="note" x="38" y="563">illustrative example, not a real transcript</text>
+  </g>
+</svg>

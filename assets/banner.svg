@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="t d">
+  <title id="t">Dart Mastery Tutor</title>
+  <desc id="d">Banner for Dart Mastery Tutor, a Claude skill for learning the Dart language.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#06121f"/>
+      <stop offset="0.55" stop-color="#02569B"/>
+      <stop offset="1" stop-color="#0175C2"/>
+    </linearGradient>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#13B9FD"/>
+      <stop offset="1" stop-color="#7CE0FF"/>
+    </linearGradient>
+    <clipPath id="round"><rect width="1200" height="340" rx="22"/></clipPath>
+  </defs>
+  <style>
+    .title { font: 700 58px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #ffffff; }
+    .sub   { font: 400 22px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #bfe6ff; }
+    .chip  { font: 600 14px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #e8f6ff; }
+    .code  { font: 500 17px 'Cascadia Code', Consolas, 'SF Mono', Menlo, monospace; fill: #d7ecff; }
+    .kw    { fill: #7CE0FF; }
+    .str   { fill: #ffd479; }
+    .dim   { fill: #6f9cc0; }
+    .lbl   { font: 600 13px 'Segoe UI', system-ui, -apple-system, Helvetica, Arial, sans-serif; fill: #9fd4f5; }
+    .orb   { fill: #13B9FD; opacity: .14; }
+    .o1 { animation: float1 9s ease-in-out infinite; }
+    .o2 { animation: float2 12s ease-in-out infinite; }
+    .o3 { animation: float1 15s ease-in-out infinite reverse; }
+    @keyframes float1 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(24px,-18px); } }
+    @keyframes float2 { 0%,100% { transform: translate(0,0); } 50% { transform: translate(-30px,16px); } }
+    .l1, .l2, .l3, .l4, .l5 { opacity: 0; animation: line 10s infinite; }
+    .l1 { animation-delay: 0.2s; } .l2 { animation-delay: 0.9s; } .l3 { animation-delay: 1.6s; }
+    .l4 { animation-delay: 2.3s; } .l5 { animation-delay: 3.0s; }
+    @keyframes line { 0% { opacity: 0; transform: translateX(-8px); } 4%,88% { opacity: 1; transform: translateX(0); } 94%,100% { opacity: 0; transform: translateX(0); } }
+    .fill { transform-box: fill-box; transform-origin: left center; animation: grow 10s infinite; animation-delay: 3.4s; transform: scaleX(0); }
+    @keyframes grow { 0% { transform: scaleX(0); } 12% { transform: scaleX(0.34); } 40% { transform: scaleX(0.61); } 70%,88% { transform: scaleX(0.82); } 96%,100% { transform: scaleX(0); } }
+    .num { opacity: 0; animation: line 10s infinite; animation-delay: 3.4s; }
+    .cursor { animation: blink 1s steps(2, start) infinite; }
+    @keyframes blink { to { visibility: hidden; } }
+    @media (prefers-reduced-motion: reduce) {
+      .o1, .o2, .o3, .l1, .l2, .l3, .l4, .l5, .fill, .num, .cursor { animation: none; opacity: 1; transform: none; }
+      .fill { transform: scaleX(0.82); }
+    }
+  </style>
+
+  <g clip-path="url(#round)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <circle class="orb o1" cx="130" cy="290" r="150"/>
+    <circle class="orb o2" cx="620" cy="40" r="110"/>
+    <circle class="orb o3" cx="1080" cy="300" r="170"/>
+  </g>
+
+  <!-- left: title block -->
+  <text class="title" x="64" y="140">Dart Mastery Tutor</text>
+  <text class="sub" x="64" y="184">A Claude skill that takes you from your first</text>
+  <text class="sub" x="64" y="214">print() to interview-ready Dart.</text>
+
+  <g transform="translate(64,248)">
+    <rect width="132" height="36" rx="18" fill="#ffffff" fill-opacity=".14"/>
+    <text class="chip" x="66" y="23" text-anchor="middle">Dart 3 · null safe</text>
+    <rect x="144" width="132" height="36" rx="18" fill="#ffffff" fill-opacity=".14"/>
+    <text class="chip" x="210" y="23" text-anchor="middle">16 skill areas</text>
+    <rect x="288" width="140" height="36" rx="18" fill="#ffffff" fill-opacity=".14"/>
+    <text class="chip" x="358" y="23" text-anchor="middle">DSA + interviews</text>
+  </g>
+
+  <!-- right: code card -->
+  <g transform="translate(700,48)">
+    <rect width="440" height="244" rx="16" fill="#06121f" fill-opacity=".72" stroke="#13B9FD" stroke-opacity=".35"/>
+    <circle cx="26" cy="24" r="6" fill="#ff6b6b"/><circle cx="46" cy="24" r="6" fill="#ffd479"/><circle cx="66" cy="24" r="6" fill="#5fe3a1"/>
+    <text class="code l1" x="28" y="68"><tspan class="kw">void</tspan> main() {</text>
+    <text class="code l2" x="52" y="96"><tspan class="kw">final</tspan> level = tutor.diagnose();</text>
+    <text class="code l3" x="52" y="124"><tspan class="kw">final</tspan> plan  = tutor.roadmap(level);</text>
+    <text class="code l4" x="52" y="152"><tspan class="dim">// learn, practice, review, repeat</tspan></text>
+    <text class="code l5" x="28" y="180">}<tspan class="cursor"> ▌</tspan></text>
+
+    <text class="lbl" x="28" y="214">Dart rating</text>
+    <rect x="120" y="203" width="230" height="12" rx="6" fill="#ffffff" fill-opacity=".14"/>
+    <rect class="fill" x="120" y="203" width="230" height="12" rx="6" fill="url(#bar)"/>
+    <text class="lbl num" x="362" y="214">earned, not given</text>
+  </g>
+</svg>
